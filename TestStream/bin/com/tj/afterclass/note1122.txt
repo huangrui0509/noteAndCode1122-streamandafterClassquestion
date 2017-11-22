@@ -1,0 +1,45 @@
+1.git常用命令：
+git init 初始化git仓库
+git status 查看仓库文件状态
+git add 命令主要用于把我们要提交的文件的信息添加到索引库中。
+git add 文件名   添加文件到...
+git add .  添加使用当前目录下文件到...
+git commit -m "提交的信息说明"  //提交文件到本地
+git log  查看提交修改记录 
+git reset HEAD^ ：回退版本，一个^表示一个版本，可以多个，另外也可以使用 git reset HEAD～n这种形式
+gti reset --hard commit值  （回退到某个版本，commit值可以通过git log 获取）
+
+2.java8 -lambda
+
+lambda-函数式编程
+
+基本形式：
+
+(params) -> expression
+(params) -> statement
+(params) -> { statements }
+
+表达式中要执行多个语句块,需要将多个语句块以{}进行包装，如果有返回值，需要显示指定return语句
+
+
+静态方法引用
+对象的实例方法引用
+类的实例方法引用
+构造方法引用
+
+Construtor reference的特殊用法
+
+Employee[] emps = empStream.toArray(Employee[]::new)
+
+
+
+
+java.util.function
+
+Predicate<T> 返回结果是boolean类型
+
+Function<T, R> 接受一定数量的参数 同时提供一个返回结果
+
+Consumer<T>  处理参数不提供返回结果
+
+Supplier<T>  不提供参数,获取一种类型的返回结果
